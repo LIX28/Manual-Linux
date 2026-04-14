@@ -19,28 +19,5 @@
     <p>Ejecutar un comando (borrar archivos .log):</p>
     <pre>find /ruta -name "*.log" -exec rm {} \;</pre>
 
-    <h2>EJEMPLOS DE ERRORES COMUNES</h2>
-
-    <p>Error: olvidar las comillas en la búsqueda</p>
-    <pre>find /ruta -name *.txt</pre>
-    <p>Correcto:</p>
-    <pre>find /ruta -name "*.txt"</pre>
-
-    <p>Error: usar mal el tamaño (sin +)</p>
-    <pre>find /ruta -size 10M</pre>
-    <p>Correcto (mayores de 10MB):</p>
-    <pre>find /ruta -size +10M</pre>
-
-    <p>Error: olvidar escapar el punto y coma</p>
-    <pre>find /ruta -name "*.log" -exec rm {} ;</pre>
-    <p>Correcto:</p>
-    <pre>find /ruta -name "*.log" -exec rm {} \;</pre>
-
-    <hr>
-
-    <footer>
-        <h3>HECHO POR ARON</h3>
-    </footer>
-
 </body>
 </html>
