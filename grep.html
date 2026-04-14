@@ -2,52 +2,45 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Comando GREP</title>
+    <title>Ejemplo comando grep</title>
 </head>
 <body>
+    <h1>Ejemplo de uso del comando grep</h1>
 
-    <!-- TÍTULO -->
-    <h1>Comando GREP</h1>
+    <p>Buscar una palabra en un archivo:</p>
+    <pre>grep "texto" archivo.txt</pre>
 
-    <!-- COMANDO -->
-    <h2>Comando</h2>
-    <p>grep</p>
+    <p>Buscar sin distinguir mayúsculas/minúsculas:</p>
+    <pre>grep -i "texto" archivo.txt</pre>
 
-    <!-- DESCRIPCIÓN / FUNCIÓN -->
-    <h2>Descripción</h2>
-    <p>
-        <!-- Escribe aquí qué hace el comando -->
-    </p>
+    <p>Buscar en varios archivos:</p>
+    <pre>grep "texto" *.txt</pre>
 
-    <!-- SINTAXIS -->
-    <h2>Sintaxis</h2>
-    <pre>
-grep [opciones] patrón [archivo]
-    </pre>
+    <p>Mostrar número de línea:</p>
+    <pre>grep -n "texto" archivo.txt</pre>
 
-    <!-- OPCIONES -->
-    <h2>Opciones</h2>
-    <ul>
-        <li><!-- Opción + explicación --></li>
-        <li><!-- Opción + explicación --></li>
-        <li><!-- Opción + explicación --></li>
-    </ul>
+    <h2>EJEMPLOS DE ERRORES COMUNES</h2>
 
-    <!-- EJEMPLOS -->
-    <h2>Ejemplos</h2>
-    <pre>
-<!-- Ejemplo 1 -->
-<!-- Ejemplo 2 -->
-    </pre>
+    <p>Error: no usar comillas en textos con espacios</p>
+    <pre>grep texto largo archivo.txt</pre>
+    <p>Correcto:</p>
+    <pre>grep "texto largo" archivo.txt</pre>
 
-    <!-- APORTACIONES -->
-    <h2>Aportaciones de compañeros</h2>
+    <p>Error: olvidar -i para ignorar mayúsculas</p>
+    <pre>grep "hola" archivo.txt</pre>
+    <p>Correcto:</p>
+    <pre>grep -i "hola" archivo.txt</pre>
 
-    <h3>Nombre compañero</h3>
-    <p><!-- Añadir opción o ejemplo --></p>
+    <p>Error: usar mal comodines</p>
+    <pre>grep "texto" .txt</pre>
+    <p>Correcto:</p>
+    <pre>grep "texto" *.txt</pre>
 
-    <h3>Nombre compañero</h3>
-    <p><!-- Añadir opción o ejemplo --></p>
+    <hr>
+
+    <footer>
+        <h3>HECHO POR ARON</h3>
+    </footer>
 
 </body>
 </html>
