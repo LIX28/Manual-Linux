@@ -14,24 +14,52 @@
             color:white;
 
         }
+        h2{
+            color: rgb(60, 90, 145);
+        }
+        p{
+            font-size:20px;
+        }
         
         .flex{
             display:flex;
             text-align: center;
             width:75%;
-            background-color: rgb(114, 96, 126);
+            background-color: rgb(48, 66, 100);
             padding:15px;
-            margin: 0 auto; 
+            margin: 0 auto;
+            justify-content: center; 
         }
     </style>
 </head>
 <body>
     <H1>CHMOD</H1>
+    <h2>Descripcion</h2>
     <div class="flex">
-        <p style="text-align: center;">
-            
+        <p>
+          El comando chmod en Linux se usa para cambiar los permisos de acceso
+           (lectura, escritura y ejecución) de archivos y directorios.
+
+          Permite decidir quién puede hacer qué con un archivo: el propietario, el grupo o otros usuarios.
+          Por ejemplo, puedes dar permiso de ejecución a un script o restringir el acceso a un archivo privado.
         </p>
     </div>
-    <h4>Ejemplo De uso:</h4>
+    <h2>Opciones</h2>
+
+    <div class="flex">
+        </ul>
+            <li><p>-R: aplica los cambios de forma recursiva a todos los archivos y carpetas dentro de un directorio.</p> </li>
+            <li><p>-v: muestra un mensaje detallado de cada cambio realizado.</p></li>
+            <li><p>-c: muestra solo los cambios cuando realmente se modifica algún permiso.</p></li>
+            <li><p>-f: modo silencioso, no muestra errores si ocurren.</p></li>
+        </ul>
+    </div>
+    <h2>Ejemplo De uso:</h4>
+    <div class="flex">
+        <p>chmod u+x script.sh </p>
+        <hr>
+        <p>Esto añade permiso de ejecución solo al usuario propietario.</p>
+        
+    </div>    
 </body>
 </html>
